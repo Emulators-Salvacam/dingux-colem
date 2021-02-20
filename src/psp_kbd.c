@@ -585,6 +585,11 @@ cv_decode_key(int psp_b, int button_pressed)
       psp_init_keyboard();
     }
   } else {
+#ifndef MIYOO_MODE
+  if (psp_b == KBD_FIRE) {
+    kbd_home_button_released = !button_pressed;
+  } else {
+#endif
  
     if (psp_kbd_mapping[psp_b] >= 0) {
       wake = 1;
@@ -619,6 +624,9 @@ cv_decode_key(int psp_b, int button_pressed)
         kbd_ltrigger_mapping_active = 0;
       }
     }
+#ifndef MIYOO_MODE
+  }
+#endif
   }
   return 0;
 }

@@ -74,13 +74,24 @@
    { "Down     :" },
    { "Left     :" },
    { "Right    :" },
+# if defined(MIYOO_MODE)
+   { "B        :" },
+   { "Y        :" },
+   { "X        :" },
+   { "A        :" },
+# else
    { "X        :" },
    { "A        :" },
    { "Y        :" },
    { "B        :" },
+# endif
    { "LTrigger :" },
    { "RTrigger :" },
+# if defined(MIYOO_MODE)   
+   { "Start    :" },
+# else 
    { "JoyFire  :" },
+# endif
    { "JoyUp    :" },
    { "JoyDown  :" },
    { "JoyLeft  :" },
