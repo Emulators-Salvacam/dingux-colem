@@ -1,0 +1,34 @@
+1.1.0
+
+- A thumbnail image is now displayed in the file requester 
+  while selecting any file with the same name of a previously 
+  saved game (roms, keyboard, settings).
+  It might be very helpful to recognize that game later if you 
+  have thousand different games in your rom folder !
+- Save state dates are displayed in the emulator window
+- Save state files are now saved using gzip compression
+  (with STZ as file extention). It's much faster to save 
+  or load states now.
+  You can use gzip or 7-zip to convert old STA to STZ.
+  STA file format is still supported for loading, so you 
+  convert your previous saved files inside the emulator.
+  (it's now easier to identify and to load the right save state slot)
+- Cheat support !
+- Memory monitoring engine to find your own cheat code !
+- Text editor to modify the global cheat.txt file
+- Text editor to write your own comments on games 
+- Display first comment line while browsing game files
+- Auto fire support for second joystick
+- Zip rom files are decompressed in memory (much faster !)
+- Improve file requester with virtual keyboard to choose 
+  sequentially rom files beginning with a given letter
+- Add documentation for settings in help menu
+- Auto-fire mode, press RTrigger+X to switch it on/off
+- Add several new hotkeys :
+  . settings such as fps, render mode, auto fire speed
+    can now be directly modified inside the emulator
+    (no need to enter in the settings menu)
+  . quick save / quick load current state
+    (no need to enter in the main menu)
+- Add ntsc/pal option and fix issue with default speed
+  (emulator was too slow in ntsc mode)
