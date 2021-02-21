@@ -215,8 +215,10 @@ psp_display_screen_menu(void)
 
   if (CV.cv_save_state[cur_slot].thumb) {
     psp_sdl_blit_thumb(170,125, CV.cv_save_state[cur_slot].surface);
+  #ifndef MIYOO_MODE
   } else {
     psp_sdl_blit_thumb(170,125, thumb_surface);
+  #endif
   }
 
   psp_menu_display_save_name();
